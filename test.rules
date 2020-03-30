@@ -1,0 +1,2 @@
+activate tcp any any -> any 3399 (activates:111;content:"login";content:"Initial";) 
+dynamic tcp any any -> any 3399 (activated＿by:111;pcre:(?:(?:[0,1]?\d?\d|2[0-4]\d|25[0-5])\.){3}(?:[0,1]?\d?\d|2[0-4]\d|25[0-5]):\d{0,5} ;msg:"bot founded";sid:1000001;)
